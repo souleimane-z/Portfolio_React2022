@@ -1,0 +1,8 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 670px;
+    /* background-color: #1F2235; */
+    background-image: url("../../Assets/bg-two.png");
+}

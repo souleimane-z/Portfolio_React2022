@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/coding.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Portfolio Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet"
+    type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <title>John - Développeur WEB basé sur Mars</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+<script>
+  configObj = {
+    buttonD:
+      "M8 17.333h5.333v4C13.333 22.806 14.527 24 16 24c1.473 0 2.667-1.194 2.667-2.667v-4H24L16 8l-8 9.333z",
+    buttonT:
+      "translate(-1088 -172) translate(832 140) translate(32 32) translate(224)",
+    shadowSize: "none",
+    roundnessSize: "999px",
+    buttonDToBottom: "28px",
+    buttonDToRight: "28px",
+    selectedBackgroundColor: "#ff5823",
+    selectedIconColor: "#1f2235",
+    buttonWidth: "48px",
+    buttonHeight: "48px",
+    svgWidth: "40px",
+    svgHeight: "40px",
+  };
+  function createButton(obj, pageSimulator) {
+    const body = document.querySelector("body");
+    backToTopButton = document.createElement("span");
+    backToTopButton.classList.add("softr-back-to-top-button");
+    backToTopButton.id = "softr-back-to-top-button";
+    pageSimulator
+      ? pageSimulator.appendChild(backToTopButton)
+      : body.appendChild(backToTopButton);
+    backToTopButton.style.width = obj.buttonWidth;
+    backToTopButton.style.height = obj.buttonHeight;
+    backToTopButton.style.marginRight = obj.buttonDToRight;
+    backToTopButton.style.marginBottom = obj.buttonDToBottom;
+    backToTopButton.style.borderRadius = obj.roundnessSize;
+    backToTopButton.style.boxShadow = obj.shadowSize;
+    backToTopButton.style.color = obj.selectedBackgroundColor;
+    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+    pageSimulator
+      ? (backToTopButton.style.position = "absolute")
+      : (backToTopButton.style.position = "fixed");
+    backToTopButton.style.outline = "none";
+    backToTopButton.style.bottom = "0px";
+    backToTopButton.style.right = "0px";
+    backToTopButton.style.cursor = "pointer";
+    backToTopButton.style.textAlign = "center";
+    backToTopButton.style.border = "solid 2px currentColor";
+    backToTopButton.innerHTML =
+      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
+    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
+    backToTopButtonSvg.style.verticalAlign = "middle";
+    backToTopButtonSvg.style.margin = "auto";
+    backToTopButtonSvg.style.justifyContent = "center";
+    backToTopButtonSvg.style.width = obj.svgWidth;
+    backToTopButtonSvg.style.height = obj.svgHeight;
+    backToTopButton.appendChild(backToTopButtonSvg);
+    backToTopButtonImg = document.querySelector(".back-to-top-button-img");
+    backToTopButtonImg.style.fill = obj.selectedIconColor;
+    backToTopButtonSvg.appendChild(backToTopButtonImg);
+    backToTopButtonImg.setAttribute("d", obj.buttonD);
+    backToTopButtonImg.setAttribute("transform", obj.buttonT);
+    if (!pageSimulator) {
+      backToTopButton.style.display = "none";
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+      backToTopButton.onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    createButton(configObj, null);
+  });
+</script>
+
+</html>

@@ -1,0 +1,310 @@
+.resume-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+
+.resume-card {
+  display: flex;
+  height: 370px;
+  width: 1100px;
+  box-shadow: 0 0px 20px -2px #1f2235;
+  background-color: #f0f0f0;
+  /* margin: 80px 0; */
+}
+
+.resume-bullets {
+  box-shadow: 15px 0 9px -15px #1f2235;
+  height: 100%;
+  width: 320px;
+}
+
+.resume-bullet-details {
+  flex-grow: 1;
+  width: 600px;
+  overflow: hidden;
+  padding: 0 0 0 4rem;
+}
+
+.experience-description {
+  padding: 0;
+  margin: 0 0 0 0;
+  text-align: justify;
+}
+
+.resume-description-text {
+  font-size: 12px;
+}
+
+.resume-details-carousal {
+  transition: transform 1s ease-out;
+}
+
+.bullet-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bullets {
+  width: 86%;
+  position: relative;
+  z-index: 2;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1f2235;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  width: 30px;
+  transition: width 0.6s ease;
+}
+
+.bullet-label {
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: "Poppins SemiBold";
+}
+
+.bullet-logo {
+  height: 16px;
+  width: 16px;
+  margin: 0 30px 0 0;
+}
+
+.bullet-icons {
+  width: 34px!important;
+  height: 100%;
+  z-index: 1;
+  background-color: #1f2235;
+  position: absolute;
+}
+
+.selected-bullet {
+  color: var(--white);
+  width: 100%;
+}
+
+.resume-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 360px;
+  width: 100%;
+}
+
+.resume-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-main-heading span {
+  color: #313552;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Poppins Bold";
+  text-transform: uppercase;
+  text-decoration: dashed underline #ff5823;
+  text-underline-offset: 0.2em;
+}
+.experience-description {
+  max-width: 100%;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  border-radius: 50%;
+  background-color: #ff5823;
+}
+.resume-sub-heading {
+  font-size: 14px;
+  font-family: "Poppins Bold";
+  color: #1f2235;
+  margin: 10px 0 4px 0;
+}
+.resume-second-heading{
+  
+  font-size: 14px;
+  font-family: "Poppins Regular";
+  color: #111;
+}
+.resume-heading-description {
+  font-size: 12px;
+  text-align: justify;
+  padding: 0 15px 0 0;
+}
+
+.heading-date {
+  background-color: #313552;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-radius: 14px;
+  margin: 0 14px;
+  color: var(--white);
+}
+
+.skill-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.programming-skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-percentage {
+  position: relative;
+  height: 15px;
+  width: 70%;
+  background-color: #ff5823;
+}
+
+.skill-percentage .active-percentage-bar {
+  height: 15px;
+  transition: 0.8s ease;
+  position: absolute;
+  background-color: #1f2235;
+}
+
+.skill-parent span {
+  font-family: "Poppins Bold";
+  font-size: 16px;
+  color: #ff5823;
+}
+.resume-description-text_semibold {
+  font-family: "Poppins SemiBold Italic";
+}
+/* IPAD PRO RESPONSIVENESS */
+@media only screen and (max-width: 1110px) {
+  .resume-card {
+    width: 880px;
+  }
+  .resume-bullets, .resume-bullet-details{
+    box-shadow: 0 0px 20px -2px #1f2235;
+  }
+  .resume-heading {
+    margin: 0 10px;
+  }
+  .resume-description-text {
+    margin: 0 10px;
+  }
+  .resume-bullet-details {
+    padding: 0 0 0 70px;
+  }
+  .programming-skills-container {
+    width: 100%;
+    margin-left: 35px;
+  }
+}
+
+/* IPAD RESPONSIVENESS */
+@media only screen and (max-width: 1023px) {
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 90%;
+  }
+
+  .resume-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+  }
+
+  .resume-bullet-details {
+    height: 360px;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .resume-bullets {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .selected-bullet {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .resume-bullet-details {
+    height: 360px;
+    margin: 0;
+    padding: 0;
+  }
+  .resume-card {
+    width: 100%;
+  box-shadow: 0 0 0 0;
+  }
+  .experience-description{
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  /* .resume-card  {
+    height: 900px;
+  }
+  .resume-bullets {
+    height: 300px;
+  }
+  .resume-screen-container{
+    height: 550px;
+  } */
+  .heading-date{
+    font-size: 11px;
+    padding: 7px;
+    margin: 0;
+  }
+  .bullets {
+    margin: 0;
+    padding: 0;
+  }
+  .experience-description, .experience-container, .resume-description-text, .experience-description>span{
+    margin: 0 3px;
+    padding: 0;
+    font-size: 12px;
+  }
+  .resume-main-heading span {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+}

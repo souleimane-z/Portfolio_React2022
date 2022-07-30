@@ -1,0 +1,48 @@
+.wave-container {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+/*-----------------
+ IF YOU WANT THE IMAGE SEPARATOR
+------------------*/
+/* .footer-container {
+    height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.footer-parent {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+}
+
+.footer-parent img{
+    max-width: 100%;
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1110px) {
+    .footer-parent {
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+    .shape-bg {
+        display: none;
+    }
+    .footer-container {
+        padding-top: 2rem;
+    }
+    
+} */
