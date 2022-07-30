@@ -4,7 +4,7 @@ Voici mon portfolio codé grâce à __React.JS__.
 #### site : déployé sur Heroku
 [Démo du site](https://souleimanez.herokuapp.com/)
 
-![Portfolio by souleimane-z](METTRE URL DE L'IMAGE ICI)
+![Portfolio by souleimane-z](https://github.com/souleimane-z/Portfolio_React2022/blob/main/client/src/Assets/demo.gif)
 
 ## Fichier à ajouter :
 
