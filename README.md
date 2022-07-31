@@ -17,7 +17,9 @@ Voici mon portfolio codé grâce à __React.JS__.
 
 #### __BACKEND__ Pour connecter son compte Gmail:
 > ./route/contactRoute.js
+
 - la ligne 19 & 25 : 
+
 Remplacer par votre adresse mail
 - Ligne 20 :
 >ce ne sera pas votre mot-de-passe Google mais un token unique donné par google.
