@@ -32,20 +32,20 @@ https://youtu.be/pBtQ4IHkuQE
 ## Lancement du projet : 
 > **Note:** *(depuis le terminal)*
 
-###### _Première Méthode_.   (dans l'ordre)
+##### ___Première Méthode___ .   (dans l'ordre)
 ```bash
 cd client
-npm install --legacy-peer-deps
+npm i --legacy-peer-deps
 ```
 . Ensuite : 
 ```bash
 cd ../   (pour revenir au dosssier original et installer les dépendances du backend)
-npm install --legacy-peer-deps
+npm i --legacy-peer-deps
 npm run dev
 ```
 
 
-###### _Deuxième Méthode_.   (dans l'ordre)
+##### ___Deuxième Méthode___ .   (dans l'ordre)
 Si la première méthode ne fonctionne pas, tapez cela dans le terminal: 
 
   ||Backend                     | Frontend                     |
@@ -58,6 +58,4 @@ Si la première méthode ne fonctionne pas, tapez cela dans le terminal:
 ## Contact Me
 Souleimane Zeggai - 2022
 
- [LinkedIn](https://www.linkedin.com/in/souleimane-zeggai)
- 
- [Portfolio](https://souleimanez.herokuapp.com/)
+[LinkedIn](https://www.linkedin.com/in/souleimane-zeggai)       --       [Portfolio](https://souleimanez.herokuapp.com/) 
