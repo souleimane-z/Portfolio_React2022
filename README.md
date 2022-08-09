@@ -32,7 +32,7 @@ https://youtu.be/pBtQ4IHkuQE
 ## Lancement du projet : 
 > **Note:** *(depuis le terminal)*
 
-##### ___Première Méthode___ .   (dans l'ordre)
+#### ___Première Méthode___ .   (dans l'ordre)
 ```bash
 cd client
 npm i --legacy-peer-deps
@@ -45,7 +45,7 @@ npm run dev
 ```
 
 
-##### ___Deuxième Méthode___ .   (dans l'ordre)
+#### ___Deuxième Méthode___ .   (dans l'ordre)
 Si la première méthode ne fonctionne pas, tapez cela dans le terminal: 
 
   ||Backend                     | Frontend                     |
