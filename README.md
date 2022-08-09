@@ -39,6 +39,7 @@ npm install --legacy-peer-deps
 ```
 . Ensuite : 
 ```bash
+cd ../   (pour revenir au dosssier original et installer les dépendances du backend)
 npm install --legacy-peer-deps
 npm run dev
 ```
