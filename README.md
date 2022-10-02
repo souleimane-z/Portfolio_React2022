@@ -1,6 +1,7 @@
 # Portfolio - Souleimane Zeggaï 💻
 
-Ici vous avez une version anonymisé du portfolio. Un CV fictif et une photo de profile fictive ont été ajouté. Cette démo n'est que pour que vous puissez parcourir mon code pour en comprendre le fonctionnement. Seul la partie mail ne fonctionnera pas si vous ne suivez pas [les étapes plus bas](####BACKEND).
+Ici, vous avez une version anonymisée du portfolio. Un CV fictif et une photo de profil fictive ont été ajoutés. 
+Cette démo n'est que pour que vous puissiez parcourir mon code pour en comprendre le fonctionnement. Seule la partie mail ne fonctionnera pas si vous ne suivez pas les étapes plus bas qui vous expliqueront comment synchroniser de manière sécurisée votre compte mail.
 
 Voici mon portfolio codé grâce à __React.JS__.
 
