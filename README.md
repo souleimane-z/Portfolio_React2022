@@ -1,8 +1,11 @@
 # Portfolio - Souleimane Zeggaï 💻
+
+Ici vous avez une version anonymisé du portfolio. Un CV fictif et une photo de profile fictive ont été ajouté. Cette démo n'est que pour que vous puissez parcourir mon code pour en comprendre le fonctionnement. Seul la partie mail ne fonctionnera pas si vous ne suivez pas [les étapes plus bas](#### __BACKEND__ Pour connecter son compte Gmail:).
+
 Voici mon portfolio codé grâce à __React.JS__.
 
 #### site : déployé sur Heroku
-[Démo du site](https://souleimanez.herokuapp.com/)
+[Démo du site](https://www.souleimane-z.com)
 
 ![Portfolio by souleimane-z](https://github.com/souleimane-z/Portfolio_React2022/blob/main/client/src/Assets/demo.gif)
 
