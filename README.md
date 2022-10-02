@@ -12,11 +12,11 @@ Voici mon portfolio codé grâce à __React.JS__.
 
 ## Fichier à ajouter :
 
-- Ajouter son CV :  __"CV.pdf"__    ***FACULTATIF***
+- Ajouter son CV :  __"CV.pdf"__    ➡️➡️   (***FACULTATIF***)
 > ./client/src/Assets/CV.pdf
 
 
-- Images: __"me.jpg"__    ***FACULTATIF***
+- Images: __"me.jpg"__    ➡️➡️   (***FACULTATIF***)
 > ./client/src/Assets/AboutMe/me.webp
 
 #### BACKEND Pour connecter son compte Gmail:
