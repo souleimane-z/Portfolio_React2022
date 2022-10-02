@@ -26,7 +26,7 @@ Voici mon portfolio codé grâce à __React.JS__.
 
 Remplacer par votre adresse mail
 - Ligne 20 :
->ce ne sera pas votre mot-de-passe Google mais un token unique donné par google.
+> **Note:** *ce ne sera pas votre mot-de-passe Google mais un token unique donné par google*
 
 Pour avoir un code de connexion unique suivre cette procédure ⬇️.
 
@@ -34,7 +34,7 @@ https://youtu.be/pBtQ4IHkuQE
 
 
 ## Lancement du projet : 
-> **Note:** *(depuis le terminal)*
+> **Note:** *depuis le terminal*
 
 #### ___Première Méthode___ .   (dans l'ordre)
 ```bash
