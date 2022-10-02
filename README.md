@@ -1,13 +1,13 @@
 # Portfolio - Souleimane Zeggaï 💻
 
-Ici vous avez une version anonymisé du portfolio. Un CV fictif et une photo de profile fictive ont été ajouté. Cette démo n'est que pour que vous puissez parcourir mon code pour en comprendre le fonctionnement. Seul la partie mail ne fonctionnera pas si vous ne suivez pas [les étapes plus bas](####__BACKEND__).
+Ici vous avez une version anonymisé du portfolio. Un CV fictif et une photo de profile fictive ont été ajouté. Cette démo n'est que pour que vous puissez parcourir mon code pour en comprendre le fonctionnement. Seul la partie mail ne fonctionnera pas si vous ne suivez pas [les étapes plus bas](#### BACKEND).
 
 Voici mon portfolio codé grâce à __React.JS__.
 
-#### site : déployé sur Heroku
+## site : 
 [Démo du site](https://www.souleimane-z.com)
 
-![Portfolio by souleimane-z](https://github.com/souleimane-z/Portfolio_React2022/blob/main/client/src/Assets/demo.gif)
+![Portfolio by souleimane-z](https://dl.dropboxusercontent.com/s/1bteaibu98p2t67/demo.gif?dl=0)
 
 ## Fichier à ajouter :
 
@@ -18,7 +18,7 @@ Voici mon portfolio codé grâce à __React.JS__.
 - Images: __"me.jpg"__
 > ./client/src/Assets/AboutMe/me.webp
 
-#### __BACKEND__ Pour connecter son compte Gmail:
+#### BACKEND Pour connecter son compte Gmail:
 > ./route/contactRoute.js
 
 - la ligne 19 & 25 : 
